@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+
+            *{
+                padding: 0px;
+                margin: 0px;
+                box-sizing: border-box;
+            }
+
+            .grid{
+                display: grid;
+                grid-template-columns: repeat(auto-fill ,minmax(200px,1fr));
+                align-items:stretch;
+                grid-column-gap: 15%;
+                margin-right: 7%;
+                margin-left: 7%;
+                
+                
+            }
+
+            .grid > article{
+
+                margin-top: 50px;
+                font-family: Arial, Helvetica, sans-serif;
+
+            }
+
+             .grid > article img{
+                max-width: 100%;
+                border-radius: 100%;
+            }
+
+            .box header{
+                position: absolute;
+                text-align: center;
+                display: flex;
+                float: left;
+                width: 1080px;
+                height: 720px;
+                top: 50px;
+                left: 50px;
+                /* animation-name: slide;
+                animation-duration: 10s;
+                animation-iteration-count: infinite;
+                transition-duration: 2s; */
+                /* background-size: 100% 100%; */
+                /* box-shadow: 1px 2px 10px 5px white; */
+                background-image:url(culture.jpg);
+
+                animation: slider 9s infinite linear;
+                
+            }
+
+            .text> h3{
+                position: absolute;
+                color: white;
+                font-family: Arial, Helvetica, sans-serif;
+                top: 30%;
+                left: 40%;
+                font-size: large;
+            }
+
+            p{
+                font-size: 13px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            /*.grid .id1{
+                transition-property: background-image;
+                transition-duration: 2s;
+            }
+
+            .grid .id1:hover{
+                background-image: url(greenHead.webp);
+                border-radius: 100%;
+            }*/
+
+           h3{
+                background-color: rgba(202, 199, 199, 0.293);
+                height: 50px;
+                width: 450px;
+                border-radius: 2px;
+                padding-left: 50px;
+                padding-top: 10px;
+                position: fixed;
+           }
+
+            .row1{
+                display: flex;
+                justify-content:space-between ;
+                margin-bottom: 20px;
+                margin-left: 50px;
+                margin-right: 50px;    
+            }
+
+            .row2{
+                display: flex;
+                justify-content:space-between;
+                margin-top: 20px;
+                margin-left: 50px;
+                margin-right: 50px;
+                margin-bottom: 50px;
+            }
+
+            h2{
+                font-family:Arial, Helvetica, sans-serif;
+                color: rgba(58, 58, 58, 0.958);
+            }
+
+            hr.someclass{
+                color: rgba(243, 239, 239, 0.777);
+                margin-left: 50px;
+                margin-right: 50px;        
+            } 
+            
+            button{
+                border-color: rgba(195, 192, 192, 0.777);
+                border-radius: 2px;
+                
+                height: 50px;
+                width: 100px;
+                border: 10px;
+                
+            }
+
+            .container{
+                display: flex;
+                margin-left: 50px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+
+            .container .right-text{
+                margin-left: 500px;
+            }
+
+           .box_header ul, li{
+                display: inline;
+           }
+
+           @keyframes slider {
+
+            0%{background-image: url('bwood.png'); background-size: 100% 100%;}
+            20%{background-image: url('Jacaranda.jpg'); background-size: 100% 100%;}
+            40%{background-image: url('kids.jpg'); background-size: 100% 100%;}
+            60%{background-image: url('facepaint.jpg'); background-size: 100% 100%;}
+            80%{background-image: url('w8.jpeg'); background-size: 100% 100%;}
+           }
+
+
+        </style>
+    </head>
+    <body>
+        <div class="parent">
+            <div class="box_header">
+                
+                <img src="bwood.png" height="100%" width="100%">
+                <!-- <li><img src="blu.jpg" height="700px" width="100%"></li>
+                <li><img src="kids.jpg" height="700px" width="100%"></li>
+                <li><img src="w8.jpeg" height="50%" width="100%"></li>
+                 -->
+                
+            </div>   
+            
+                <div class="text">
+                    <h3 style="color: white;">Local, organic, artisan, handmade goods.</h3>
+                </div>
+        </div>
+        
+        <br>
+        <hr class="someclass">
+        <br><br>
+        <div class="container">
+            <div class="left-text">
+                <h2>What We Do</h2><br>
+                <p>Church-key portland aunthetic unicorn, pickled try-hard venmo gochujang prism you probably you haven't <br>heard of them. Green juice brunch seitan, PBR&B franzen portland microdosing art party wolf tofu 8-bit <br>letterpress gastropub kogi.<br><br>Bitters artisan ugh, raclette waistcoat four loko semiotics fanny pack before they sold out snackwave <br>four dollar toast vexillologist.<br></p>
+                <br><button>Contact Us</button>
+            </div>
+    
+            <div class="right-text">
+                <h2>Contact Us</h2><br>
+                <p>Branch & Oak<br>48151 Pine Road <br> Portland, OR 62342 <br><br><u>P:</u>(123)456-7890 <br><u>E:</u>Email Us</p>
+            </div>
+        </div>
+        
+        <br>
+        <hr class="someclass">
+        <br>
+        <center><h2>What We Offer</h2></center>
+        
+        
+        <main class="grid">
+            <article class="id1">
+                <img src="purpleEarbuds.jpg">
+                <div class="text">
+                    <center>
+                        <br><h4>Bespoke</h4><br>
+                        <p>La croix vaporware viral vexillologist, flannel jianbing you probably haven't heard of them lomo selfies fixie banjo bespoke literally.</p><br>
+                    </center>
+                </div>
+            </article>
+            
+            <article>
+                <img src="YellowGE.jpg">
+                <div class="text">
+                    <center>
+                        <br><h4>Gluten-Free</h4><br>
+                        <p>Literally tacos turmeric heirloom fingerstache banjo green juice fashion axe locavore, freegan woke kogi vice photo baoth.</p><br>
+                    </center>
+                </div>
+            </article>
+
+            <article>
+                <img src="pinkE.jpg">
+                <div class="text">
+                    <center>
+                        <br><h4>Farm To Table</h4><br>
+                        <p>Helvetica pop-up raw denim, lomo godard tbh synth jean shorts. Aesthetic tumbir coloring book taco tofu.</p><br>
+                    </center>
+                </div>
+            </article>
+        </main>
+    </section>
+        <br>
+        <hr class="someclass">
+        <br><br>
+        <center><h2>Our Work</h2></center>
+        <br><br>
+           <div class="row1">
+                <section id='id1'><div><img src="cycle5.webp" height="240px" width="320px"></div></section>
+                <section id="id2"><div><img src="mural.jpeg" height="240px" width="320px"></div></section>
+                <section id="id3"><div><img src="subway.jpg" height="240px" width="320px"></div></section>
+               <section id="id4"><div><img src="Newyork1.jpg" height="240px" width="320px"></div></section>
+            </div>
+       
+            <div class="row2">
+                <section id="id1"><div><img src="store.jpg" height="240px" width="320px"></div></section>
+                <section id="id2"><div><img src="culture.jpg" height="240px" width="320px"></div></section>
+                <section id="id3"><div><img src="ice.jpg" height="240px" width="320px"></div></section>
+               <section id="id4"><div><img src="veg.jpg" height="240px" width="320px"></div></section>
+            </div>  
+        
+    </body>
+</html>
